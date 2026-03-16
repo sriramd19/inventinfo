@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced News Block</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section class="news-section">
+        <h2>Latest News</h2>
+        
+        <article class="news-card">
+            <div class="news-image">
+                <!-- Placeholder for an image -->
+                <img src="https://via.placeholder.com" alt="News Image">
+            </div>
+            <div class="news-content">
+                <h3><a href="#link1">Exciting New Tech Release!</a></h3>
+                <p>A major tech company has just unveiled its latest gadget with groundbreaking features...</p>
+                <span class="news-date">March 15, 2026</span>
+            </div>
+        </article>
+
+        <article class="news-card">
+            <div class="news-image">
+                <!-- Placeholder for an image -->
+                <img src="https://via.placeholder.com" alt="News Image">
+            </div>
+            <div class="news-content">
+                <h3><a href="#link2">Global Economic Trends Analyzed</a></h3>
+                <p>Experts weigh in on the potential shifts in the global market this quarter...</p>
+                <span class="news-date">March 14, 2026</span>
+            </div>
+        </article>
+
+        <!-- You can add more news articles here -->
+
+    </section>
+
+</body>
+</html>
+
+<style>
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+
+.news-section {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.news-card {
+    display: flex; /* Use Flexbox for side-by-side layout */
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.news-card:hover {
+    transform: translateY(-5px); /* Lift card slightly on hover */
+}
+
+.news-image img {
+    width: 150px; /* Fixed width for the image */
+    height: 100%;
+    object-fit: cover; /* Ensure image covers the area nicely */
+    display: block;
+}
+
+.news-content {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.news-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.news-content h3 a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+.news-content h3 a:hover {
+    color: #0056b3;
+}
+
+.news-content p {
+    margin: 0 0 10px 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.news-date {
+    font-size: 0.8rem;
+    color: #999;
+    display: block;
+}
+
+/* Responsive adjustment */
+@media (max-width: 480px) {
+    .news-card {
+        flex-direction: column; /* Stack image and content on small screens */
+    }
+
+    .news-image img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+</style>
